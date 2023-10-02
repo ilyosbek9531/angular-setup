@@ -1,0 +1,6 @@
+directives
+
+1. ngIf
+2. ngFor
+3. ngStyle
+4. ngClass
