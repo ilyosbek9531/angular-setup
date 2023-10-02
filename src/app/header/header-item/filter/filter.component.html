@@ -1,0 +1,3 @@
+<button [ngStyle]="{'background': filterResult === 'all' ? 'red' : ''}" (click)="handleFilter('all')">all</button>
+<button [ngStyle]="{'background': filterResult === 'even' ? 'red' : ''}" (click)="handleFilter('even')">even</button>
+<button [ngStyle]="{'background': filterResult === 'odd' ? 'red' : ''}" (click)="handleFilter('odd')">odd</button>
