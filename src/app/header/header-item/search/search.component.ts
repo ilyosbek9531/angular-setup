@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class SearchComponent {
   @Input() searchResult: string = ''
+  @Input() filterComponent: string = ''
 
   @Output() setSearchResult: EventEmitter<string> = new EventEmitter<string>()
 

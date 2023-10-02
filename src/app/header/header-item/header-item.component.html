@@ -2,7 +2,7 @@
 
 
 <h1>This is ngFor directive</h1>
-<app-filter (selectedFilterResult)="selectedFilterResult($event)" [filterResult]="filterResult"></app-filter>
-<app-search [searchResult]="searchResult" (setSearchResult)="setSearchResult($event)"></app-search>
+<app-filter (selectedFilterResult)="selectedFilterResult($event)" [filterResult]="filterResult" #filter></app-filter>
+<app-search [searchResult]="searchResult" (setSearchResult)="setSearchResult($event)" [filterComponent]="filter.filterComponent"></app-search>
 <app-item *ngFor="let item of filteredList()" [item]="item"></app-item>
 

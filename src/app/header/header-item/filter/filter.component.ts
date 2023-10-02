@@ -11,4 +11,5 @@ export class FilterComponent {
   handleFilter(filter: string) {
     this.selectedFilterResult.emit(filter)
   }
+  filterComponent: string = 'it is filter component'
 }
